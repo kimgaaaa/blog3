@@ -1,38 +1,111 @@
-.App {
+.main-bg{
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+}
+.App{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mb20{
+  margin-bottom: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mt20{
+  margin-top: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.fb{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  list-style: none;
 }
-
-.App-link {
-  color: #61dafb;
+.nav{
+  display: flex;
+  justify-content: space-between;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav h1{
+  padding-left: 50px;
+}
+.nav .menu{
+  list-style: none;
+  display: flex;
+  padding-right: 50px;
+}
+.nav .menu li{
+  padding: 0 20px;
+}
+.detailCard{
+  display: flex;
+  padding: 50px 100px;
+}
+.imgWrap{
+  padding-right: 30px;
+}
+.info{
+  text-align: left;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+h4{
+  font-size: 20px;
+}
+p{
+  color: #bbb;
+}
+button{
+  margin-top: 50px;
+  background: #d8016d;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 40px;
+}
+.price{
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+}
+.alert{
+  background: #ddd;
+  padding: 10px;
+}
+.user{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.user li{
+  width: 45%;
+  margin: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #ddd;
+}
+.tabs{
+  display: flex;
+  padding: 20px 20px 0 20px;
+}
+.tabs .item{
+  width: 200px;
+  padding: 20px 0;
+  text-align: center;
+  background: #ffa8d3;
+  margin-right: 10px;
+  border-radius: 20px 20px 0 0 ;
+}
+.tabBox{
+  background: #ddd;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 800px;
+  text-align: left;
+  margin-left: 20px;
+  height: 300px;
+}
+.start{
+  opacity: 0;
+}
+.end{
+  opacity: 1;
+  transition: opacity 0.5s;
 }
