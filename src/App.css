@@ -24,6 +24,10 @@
 .nav h1{
   padding-left: 50px;
 }
+.logo>a{
+  font-size: 45px;
+  color: pink;
+}
 .nav .menu{
   list-style: none;
   display: flex;
@@ -108,4 +112,22 @@ button{
 .end{
   opacity: 1;
   transition: opacity 0.5s;
+}
+.cart{
+  padding: 50px;
+}
+.cart table{
+  border-collapse: collapse;
+  width: 100%;
+}
+.cart table thead{
+  margin-top: 30px;
+}
+.cart table th{
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+}
+.cart table td{
+  border: 1px solid #ddd;
+  padding: 5px 10px;
 }

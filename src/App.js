@@ -7,6 +7,8 @@ import { Route, Routes, Link, Outlet} from 'react-router-dom';
 import Detail from './routes/Detail.js';
 import Detail1 from './routes/Detail1.js';
 import axios from 'axios';
+import Cart from './routes/Cart.js';
+import { RiHomeHeartFill } from "react-icons/ri";
 
 function App() {
   let [datas] = useState(data)
@@ -36,11 +38,12 @@ function App() {
         <Route path="/" element={
           <div>
             <nav className='nav'>
-              <h1 className="logo"><Link to="/">Blog</Link></h1>
+              <h1 className="logo"><Link to="/"><RiHomeHeartFill /></Link></h1>
               <ul className="menu">
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/detail1">상세페이지</Link></li>
                 <li><Link to="/about">Best</Link></li>
+                <li><Link to="/cart">Cart</Link></li>
               </ul>
             </nav>
             <div className="main-bg" style={{backgroundImage : 'url('+bg+')'}}></div>
@@ -78,6 +81,7 @@ function App() {
                 <Route path="member" element={<div>멤버임</div>}></Route>
                 <Route path="location" element={<About />}></Route>
         </Route>
+        <Route path="/cart" element={<Cart />} />
       </Routes>
       
           
